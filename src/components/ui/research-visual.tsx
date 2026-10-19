@@ -2,7 +2,7 @@ import React from "react";
 
 /**
  * Small abstract animations that sit at the centre of each research category.
- * Pure SVG + CSS so they cost nothing next to the 3D marble; all motion is
+ * Pure SVG + CSS so they stay light; all motion is
  * dropped under `prefers-reduced-motion`.
  */
 

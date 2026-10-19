@@ -7,7 +7,7 @@ import { ProjectCard } from "../components/ui/project-card";
 const PROJECTS = [
   {
     title: "AI-Assisted Grading",
-    imageSrc: "projects/automated_and_ai_grading.png",
+    imageSrc: "projects/ai_grading.svg",
     description:
       "How reliably AI can assess open-ended student work (essays, code), and where its judgments diverge from a teacher's.",
     tags: ["LLMs", "NLP", "Education"],
@@ -28,7 +28,7 @@ const PROJECTS = [
   },
   {
     title: "In-Classroom Gamification",
-    imageSrc: "projects/classroom_gamification.png",
+    imageSrc: "projects/classroom_gamification.svg",
     description:
       "Measuring what game-like mechanics and multiplayer modes actually do to engagement and social learning.",
     tags: ["Gamification", "Reward Systems", "Collaboration"],

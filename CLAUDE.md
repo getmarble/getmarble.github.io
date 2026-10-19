@@ -45,9 +45,9 @@ is fine — that is research output, not product.
 ## Layout of the site
 
 - `src/pages/` — `Home`, `Research`; routes in `src/main.tsx`.
-- `src/components/ui/` — shadcn-style primitives plus site pieces:
-  `marble-3d.tsx` (three.js hero marble, lazy-loaded, honors
-  `prefers-reduced-motion`) and `research-visual.tsx` (SVG category animations).
+- `src/components/ui/` — shadcn-style primitives plus `research-visual.tsx`
+  (SVG category animations). The home hero is text on the indigo gradient
+  with a static dot-grid and ring background; keep it minimal.
 - Content lives in plain arrays at the top of each page file — edit those
   rather than the JSX below them.
 

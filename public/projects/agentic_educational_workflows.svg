@@ -1,127 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1344 982" fill="none">
-  <rect width="1344" height="982" fill="white"/>
-
-  <!-- Title area -->
-  <text x="672" y="80" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#333">Agentic Educational Workflow</text>
-
-  <!-- Input: Task -->
-  <g transform="translate(80, 180)">
-    <rect x="0" y="0" width="200" height="120" rx="14" stroke="#333" stroke-width="3" fill="#fef3c7"/>
-    <text x="100" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#333">Task Input</text>
-    <line x1="20" y1="50" x2="180" y2="50" stroke="#333" stroke-width="1.5"/>
-    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#666">"Create a lesson</text>
-    <text x="100" y="95" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#666">on fractions"</text>
-  </g>
-
-  <!-- Arrow -->
-  <path d="M300 240 L390 240" stroke="#2563eb" stroke-width="4" marker-end="url(#aB)"/>
-
-  <!-- Agent 1: Planner -->
-  <g transform="translate(410, 150)">
-    <rect x="0" y="0" width="180" height="180" rx="16" stroke="#2563eb" stroke-width="4" fill="#eff6ff"/>
-    <!-- Robot icon -->
-    <circle cx="90" cy="45" r="28" stroke="#2563eb" stroke-width="3" fill="#bfdbfe"/>
-    <rect x="76" y="35" width="10" height="10" rx="2" fill="#2563eb"/>
-    <rect x="94" y="35" width="10" height="10" rx="2" fill="#2563eb"/>
-    <line x1="78" y1="55" x2="102" y2="55" stroke="#2563eb" stroke-width="2.5"/>
-    <!-- Antenna -->
-    <line x1="90" y1="17" x2="90" y2="8" stroke="#2563eb" stroke-width="2"/>
-    <circle cx="90" cy="6" r="3" fill="#2563eb"/>
-    <text x="90" y="100" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#2563eb">Planner</text>
-    <text x="90" y="120" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#666">Breaks task into</text>
-    <text x="90" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#666">sub-steps</text>
-    <text x="90" y="165" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#aaa">Agent 1</text>
-  </g>
-
-  <!-- Arrow -->
-  <path d="M610 240 L700 240" stroke="#2563eb" stroke-width="4" marker-end="url(#aB)"/>
-
-  <!-- Agent 2: Content Creator -->
-  <g transform="translate(720, 150)">
-    <rect x="0" y="0" width="180" height="180" rx="16" stroke="#f97316" stroke-width="4" fill="#fff7ed"/>
-    <circle cx="90" cy="45" r="28" stroke="#f97316" stroke-width="3" fill="#fed7aa"/>
-    <rect x="76" y="35" width="10" height="10" rx="2" fill="#f97316"/>
-    <rect x="94" y="35" width="10" height="10" rx="2" fill="#f97316"/>
-    <line x1="78" y1="55" x2="102" y2="55" stroke="#f97316" stroke-width="2.5"/>
-    <line x1="90" y1="17" x2="90" y2="8" stroke="#f97316" stroke-width="2"/>
-    <circle cx="90" cy="6" r="3" fill="#f97316"/>
-    <text x="90" y="100" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f97316">Creator</text>
-    <text x="90" y="120" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#666">Generates content</text>
-    <text x="90" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#666">&amp; activities</text>
-    <text x="90" y="165" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#aaa">Agent 2</text>
-  </g>
-
-  <!-- Arrow -->
-  <path d="M920 240 L1010 240" stroke="#f97316" stroke-width="4" marker-end="url(#aO)"/>
-
-  <!-- Agent 3: Reviewer -->
-  <g transform="translate(1030, 150)">
-    <rect x="0" y="0" width="180" height="180" rx="16" stroke="#16a34a" stroke-width="4" fill="#f0fdf4"/>
-    <circle cx="90" cy="45" r="28" stroke="#16a34a" stroke-width="3" fill="#bbf7d0"/>
-    <rect x="76" y="35" width="10" height="10" rx="2" fill="#16a34a"/>
-    <rect x="94" y="35" width="10" height="10" rx="2" fill="#16a34a"/>
-    <path d="M78 55 Q90 65 102 55" stroke="#16a34a" stroke-width="2.5" fill="none"/>
-    <line x1="90" y1="17" x2="90" y2="8" stroke="#16a34a" stroke-width="2"/>
-    <circle cx="90" cy="6" r="3" fill="#16a34a"/>
-    <text x="90" y="100" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#16a34a">Reviewer</text>
-    <text x="90" y="120" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#666">Quality check &amp;</text>
-    <text x="90" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#666">alignment</text>
-    <text x="90" y="165" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#aaa">Agent 3</text>
-  </g>
-
-  <!-- Feedback loop arrow (Reviewer back to Creator) -->
-  <path d="M1120 350 L1120 400 Q1120 420 1100 420 L810 420 Q790 420 790 400 L790 350" stroke="#ef4444" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#aR)" fill="none"/>
-  <text x="955" y="445" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#ef4444">Feedback Loop</text>
-
-  <!-- Output section -->
-  <g transform="translate(350, 520)">
-    <rect x="0" y="0" width="650" height="200" rx="16" stroke="#333" stroke-width="3" fill="#fafafa"/>
-    <text x="325" y="35" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#333">Output: Complete Lesson Package</text>
-    <line x1="30" y1="50" x2="620" y2="50" stroke="#e5e5e5" stroke-width="2"/>
-
-    <!-- Output items -->
-    <g transform="translate(30, 70)">
-      <rect x="0" y="0" width="175" height="100" rx="10" stroke="#2563eb" stroke-width="2" fill="#eff6ff"/>
-      <text x="88" y="30" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#2563eb">Lesson Plan</text>
-      <text x="88" y="52" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">Objectives, timeline,</text>
-      <text x="88" y="68" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">standards alignment</text>
-    </g>
-    <g transform="translate(235, 70)">
-      <rect x="0" y="0" width="175" height="100" rx="10" stroke="#f97316" stroke-width="2" fill="#fff7ed"/>
-      <text x="88" y="30" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#f97316">Activities</text>
-      <text x="88" y="52" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">Interactive exercises,</text>
-      <text x="88" y="68" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">worksheets, games</text>
-    </g>
-    <g transform="translate(440, 70)">
-      <rect x="0" y="0" width="175" height="100" rx="10" stroke="#16a34a" stroke-width="2" fill="#f0fdf4"/>
-      <text x="88" y="30" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#16a34a">Assessment</text>
-      <text x="88" y="52" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">Rubrics, quizzes,</text>
-      <text x="88" y="68" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">formative checks</text>
-    </g>
-  </g>
-
-  <!-- Arrow from agents to output -->
-  <path d="M672 360 L672 500" stroke="#333" stroke-width="3" marker-end="url(#aK)"/>
-
-  <!-- Orchestrator bar -->
-  <g transform="translate(380, 800)">
-    <rect x="0" y="0" width="580" height="60" rx="12" stroke="#7c3aed" stroke-width="3" fill="#f5f3ff"/>
-    <text x="290" y="25" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#7c3aed">Orchestrator: Manages agent coordination, memory, and tool use</text>
-    <text x="290" y="48" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#888">Autonomous multi-step execution with human-in-the-loop oversight</text>
-  </g>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Agentic educational workflows">
+  <title>Agentic educational workflows</title>
   <defs>
-    <marker id="aB" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
-      <path d="M0 0 L12 4 L0 8 Z" fill="#2563eb"/>
-    </marker>
-    <marker id="aO" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
-      <path d="M0 0 L12 4 L0 8 Z" fill="#f97316"/>
-    </marker>
-    <marker id="aR" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
-      <path d="M0 0 L12 4 L0 8 Z" fill="#ef4444"/>
-    </marker>
-    <marker id="aK" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
-      <path d="M0 0 L12 4 L0 8 Z" fill="#333"/>
-    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#faf6fd"/>
+      <stop offset="1" stop-color="#ede2f7"/>
+    </linearGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1.1" fill="#560591" fill-opacity="0.09"/>
+    </pattern>
   </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#dots)"/>
+  <g fill="none" stroke="#560591" stroke-linecap="round" stroke-linejoin="round">
+
+    <line x1="320" y1="106" x2="170" y2="146" stroke-width="2" stroke-opacity="0.3" stroke-dasharray="3 6"/>
+    <line x1="320" y1="106" x2="320" y2="146" stroke-width="2" stroke-opacity="0.3" stroke-dasharray="3 6"/>
+    <line x1="320" y1="106" x2="470" y2="146" stroke-width="2" stroke-opacity="0.3" stroke-dasharray="3 6"/>
+    <line x1="320" y1="60" x2="320" y2="69" stroke-width="2.5"/><circle cx="320" cy="57" r="3.5" fill="#560591" stroke="none"/><rect x="298" y="69" width="44" height="34" rx="10" fill="#fff" stroke-width="2.5"/><circle cx="312" cy="86" r="3.5" fill="#560591" stroke="none"/><circle cx="328" cy="86" r="3.5" fill="#560591" stroke="none"/>
+    <rect x="115" y="150" width="110" height="80" rx="16" fill="#fff" stroke-width="2.5"/><circle cx="150" cy="172" r="3.5" fill="#560591" stroke="none"/><line x1="162" y1="172" x2="194" y2="172" stroke-width="4" stroke-opacity="0.4" /><circle cx="150" cy="190" r="3.5" fill="#560591" stroke="none"/><line x1="162" y1="190" x2="186" y2="190" stroke-width="4" stroke-opacity="0.4" /><circle cx="150" cy="208" r="3.5" fill="#560591" stroke="none"/><line x1="162" y1="208" x2="192" y2="208" stroke-width="4" stroke-opacity="0.4" />
+    <rect x="265" y="150" width="110" height="80" rx="16" fill="#560591" stroke="none"/><path d="M302 166 h26 l10 10 v38 h-36 z" stroke="#fff" stroke-width="2.5"/><line x1="309" y1="184" x2="329" y2="184" stroke-width="3" stroke-opacity="0.8" stroke="#fff"/><line x1="309" y1="194" x2="325" y2="194" stroke-width="3" stroke-opacity="0.8" stroke="#fff"/><line x1="309" y1="204" x2="329" y2="204" stroke-width="3" stroke-opacity="0.8" stroke="#fff"/>
+    <rect x="415" y="150" width="110" height="80" rx="16" fill="#fff" stroke-width="2.5"/><circle cx="452" cy="190" r="5" fill="#560591" stroke="none"/><path d="M457 190 C470 190 474 172 488 172 M457 190 C470 190 474 208 488 208" stroke-width="2.5" stroke-opacity="0.6"/><circle cx="490" cy="172" r="5" fill="#560591" stroke="none"/><circle cx="490" cy="208" r="5" fill="#fff" stroke-width="2.5"/>
+    <line x1="229" y1="190" x2="261" y2="190" stroke-width="2.5" stroke-opacity="0.6" /><path d="M254 183 L261 190 L254 197" stroke-width="2.5" stroke-opacity="0.6"/>
+    <line x1="379" y1="190" x2="411" y2="190" stroke-width="2.5" stroke-opacity="0.6" /><path d="M404 183 L411 190 L404 197" stroke-width="2.5" stroke-opacity="0.6"/>
+    <path d="M470 234 C470 300 170 300 170 240" stroke-width="2.5" stroke-opacity="0.45"/>
+    <path d="M163 247 L170 238 L177 247" stroke-width="2.5" stroke-opacity="0.45"/>
+
+  </g>
 </svg>
