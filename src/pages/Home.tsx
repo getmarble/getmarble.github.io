@@ -46,8 +46,6 @@ const CATEGORIES = [
 ];
 
 export function HomePage() {
-  const mailto = `mailto:davalosedu515@trinity.edu?subject=Collaboration%20with%20Marble%20Labs&body=Hi%20Prof.%20Davalos%2C%0D%0A%0D%0AI%27m%20reaching%20out%20about%20collaborating%20with%20Marble%20Labs.%0D%0A%0D%0A[Please%20describe%20your%20project%20or%20interest...]%0D%0A`;
-
   return (
     <>
       <NavBar />
@@ -61,18 +59,10 @@ export function HomePage() {
               We study how learning actually happens, using classroom data and the analytical methods of
               computer science.
             </p>
-            <p className="mt-3 text-sm text-white/60">Learning analytics and AI · Trinity University</p>
+            <p className="mt-3 text-sm text-white/60">Learning analytics and AI</p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="bg-white text-[#3a0263] hover:bg-white/90">
-                <a href={mailto}>Collaborate with us</a>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white/40 bg-transparent text-white hover:bg-white/10 hover:text-white"
-              >
                 <Link to="/research">
                   See our research <ArrowRight className="ml-1 size-4" />
                 </Link>
@@ -115,7 +105,7 @@ export function HomePage() {
       <section id="research" className="scroll-mt-24 border-t md:scroll-mt-28" aria-label="Research">
         <div className="container mx-auto max-w-6xl px-4 py-14 md:py-20">
           <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Research</h2>
-          <p className="mt-2 max-w-[62ch] text-muted-foreground">Three directions, each with a student driving it.</p>
+          <p className="mt-2 max-w-[62ch] text-muted-foreground">Three directions we are pursuing now.</p>
 
           <div className="mt-12 grid gap-12 md:grid-cols-3 md:gap-8">
             {CATEGORIES.map(({ name, visual: Visual, topics }) => (
@@ -133,18 +123,13 @@ export function HomePage() {
 
           <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t pt-8">
             <p className="text-sm text-muted-foreground">
-              We take students from CS, CE, Psychology, and Education.
+              We work with collaborators in computer science, psychology, and education.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Button asChild variant="outline">
-                <Link to="/research">
-                  All projects <ArrowRight className="ml-1 size-4" />
-                </Link>
-              </Button>
-              <Button asChild>
-                <a href={mailto}>Email Prof. Davalos</a>
-              </Button>
-            </div>
+            <Button asChild variant="outline">
+              <Link to="/research">
+                All projects <ArrowRight className="ml-1 size-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

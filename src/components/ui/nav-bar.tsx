@@ -122,7 +122,6 @@ type NavItem =
 const NAV_ITEMS: NavItem[] = [
   { label: "Home", to: "/", end: true },
   { label: "Research", to: "/research" },
-  { label: "Students", to: "/students" },
   // Example PDF in /public:
   { label: "Dr. Davalos' Website", href: "https://edavalosanaya.github.io", external: true },
 ];

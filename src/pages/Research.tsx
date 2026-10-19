@@ -49,23 +49,16 @@ const PROJECTS = [
   },
 ] as const;
 
-const RECRUITING = {
-  university: "Trinity University",
-  majors: ["Computer Science", "Computer Engineering", "Psychology", "Education"],
-  email: "davalosedu515@trinity.edu",
-};
 // ----------------------------------------------------------------------------
 
 export function ResearchPage() {
-  const mailto = `mailto:${RECRUITING.email}?subject=Undergraduate/Graduate%20Research%20Interest&body=Hi%20Prof.%20Davalos%2C%0D%0A%0D%0AMy%20research%20interests%20are%3A%20...%0D%0A%0D%0AI've%20attached%20my%20CV.%0D%0A%0D%0AThanks!`;
-
   return (
     <>
       <NavBar />
       <div className="container mx-auto max-w-6xl px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
           {/* Main: Projects */}
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-12">
             <header className="mb-6">
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight">On-Going Projects</h1>
               <p className="mt-2 text-muted-foreground max-w-[70ch]">
@@ -73,7 +66,7 @@ export function ResearchPage() {
               </p>
             </header>
 
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {PROJECTS.map((p) => (
                 <ProjectCard
                   key={p.title}
@@ -89,39 +82,6 @@ export function ResearchPage() {
 
           </div>
 
-          {/* Sidebar: Recruiting */}
-          <aside className="lg:col-span-4 lg:sticky lg:top-24 self-start space-y-8">
-            <section className="rounded-lg border p-4">
-              <h2 className="text-lg font-semibold tracking-tight">Joining the Lab</h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                I’m currently accepting students in {RECRUITING.university} from the following majors:
-              </p>
-              <ul className="mt-3 grid grid-cols-2 gap-2 text-sm">
-                {RECRUITING.majors.map((m) => (
-                  <li key={m} className="rounded border bg-muted px-2 py-1 text-muted-foreground">
-                    {m}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4 text-sm">
-                <p className="font-medium">How to reach out</p>
-                <ol className="mt-1 list-decimal pl-5 space-y-1">
-                  <li>Email me with a short paragraph about what you want to research.</li>
-                  <li>Attach your current CV.</li>
-                </ol>
-                <a href={mailto} className="mt-3 inline-flex rounded-md border px-3 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground">
-                  Email Prof. Davalos
-                </a>
-              </div>
-            </section>
-
-            <section className="rounded-lg border p-4">
-              <h2 className="text-lg font-semibold tracking-tight">Prospective Collaborators</h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                I collaborate across CS, Psychology, Education, and Learning Sciences. If your interests intersect with any of the directions above, feel free to get in touch.
-              </p>
-            </section>
-          </aside>
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This repo is the public site for **Marble Labs** (Trinity University) — a React +
+This repo is the public site for **Marble Labs** — a React +
 TypeScript + Vite SPA, styled with Tailwind v4 and shadcn-style components,
 deployed to GitHub Pages from `main` via `.github/workflows/host.yml`.
 
@@ -15,9 +15,13 @@ Two separate things share the Marble name:
   data collected through Marble, with participant consent, and publishes open
   research — data and findings both.
 
-Students in the lab **analyze learning analytics**. They apply AI and computer
-science analytical methods to understand how learning happens. They are not
-product engineers and do not build Marble or any other learning software.
+The lab **analyzes learning analytics**. It applies AI and computer science
+analytical methods to understand how learning happens. It is not a product
+team and does not build Marble or any other learning software.
+
+The site presents a research lab, not a student-led group. There is no
+students/alumni page, no student recruiting, and no university affiliation;
+that content moved to a separate academic lab site.
 
 Write the site so a reader lands on this understanding on their own. Do **not**
 state the distinction outright — no disclaimer sentence, no "we don't build the
@@ -40,7 +44,7 @@ is fine — that is research output, not product.
 
 ## Layout of the site
 
-- `src/pages/` — `Home`, `Research`, `Students`; routes in `src/main.tsx`.
+- `src/pages/` — `Home`, `Research`; routes in `src/main.tsx`.
 - `src/components/ui/` — shadcn-style primitives plus site pieces:
   `marble-3d.tsx` (three.js hero marble, lazy-loaded, honors
   `prefers-reduced-motion`) and `research-visual.tsx` (SVG category animations).

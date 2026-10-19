@@ -6,7 +6,6 @@ import { RouterProvider } from "react-router/dom";
 
 import { HomePage } from "./pages/Home";
 import { ResearchPage } from "./pages/Research";
-import { StudentsPage } from "./pages/Students"
 
 const router = createBrowserRouter([
   {
@@ -16,10 +15,6 @@ const router = createBrowserRouter([
   {
     path: "/research",
     element: <ResearchPage />,
-  },
-  {
-    path: "/students",
-    element: <StudentsPage />,
   }
 ]);
 
